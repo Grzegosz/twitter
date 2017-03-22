@@ -31,7 +31,7 @@ public class TweeterOperationsTest {
     }
 
     @Test
-    public void itReturnsProperUltimateLogMessage() throws Exception {
+    public void importantTestThatChecksProperUltimateLogMessage() throws Exception {
         assertEquals(unit.prepareUltimateLogMessage(), ultimateLogMessage);
     }
 

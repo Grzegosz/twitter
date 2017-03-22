@@ -2,7 +2,7 @@ package pl.gk.tweeter.operations;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import pl.gk.tweeter.ImpossibleTreningException;
+import pl.gk.tweeter.ImpossibleTrainingException;
 import pl.gk.tweeter.model.Tweet;
 import pl.gk.tweeter.model.User;
 import pl.gk.tweeter.repository.InMemoryOfMarcinRepository;
@@ -52,7 +52,7 @@ public class TweeterOperations {
 
         long legTrainings = trainingDays.stream().filter(this::legDay).count();
         if (legTrainings > 0)
-            throw new ImpossibleTreningException();
+            throw new ImpossibleTrainingException();
 
         return isAnabolicWindowOpenedForUser(user);
     }

@@ -1,12 +1,12 @@
 +
-
+Handsome programmer
 
 +-
 Code formatting
 
 
 -
-Not funny
+No interfaces
 Only one operations class
 Missing headers
 
